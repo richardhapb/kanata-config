@@ -23,8 +23,8 @@
 (deflayer navigation
   XX  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX  XX  XX  XX XX XX
   XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    lrld XX
-  XX    @lnum    XX    @es  XX    XX    XX    @us  @is  @os  XX    pgup    pgdn    XX  XX
-  @spu  @as  XX    XX    XX    XX    lft   down    up   rght    XX    XX    ret XX
+  XX    @lnum    XX    @es  XX    XX    XX    @us  @is  @os  XX    pgup    pgdn    (lrld-num 2) XX
+  @spu  @as  XX    XX    XX    XX    lft   down    up   rght    XX    XX    (lrld-num 1) XX
   _     XX    XX    XX    XX    XX    @ns  XX    XX    XX    XX    XX  XX  XX
   _     _   _    XX    _    _    _   _    _ 
 )
@@ -53,7 +53,7 @@
   XX    @exc    @and     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  \  XX
   XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    =  XX
   XX    @lr   kp*     @tt     @und    @cex    XX      -   @bo  @bc     `    +  XX  XX
-  @lfun     XX    XX    XX    XX    XX    XX   XX   XX
+  XX     XX    XX    XX    XX    XX    XX   XX   XX
 )
 
 (defvar
