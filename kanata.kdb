@@ -56,11 +56,11 @@
   XX    @exc    @and     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  \
   XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    =
   XX    @lr   kp*     @tt     @und    @cex    XX      -   @bo  @bc     `    +
-  @lfun     XX    XX    XX    XX    XX    XX   XX
+  @lfun     XX    XX    spc    XX    XX    XX   XX
 )
 
 (defvar
-  tap-timeout 100
+  tap-timeout 50
   hold-timeout 100
   tt $tap-timeout
   ht $hold-timeout
