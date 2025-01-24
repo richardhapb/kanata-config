@@ -13,9 +13,9 @@
 (deflayer base
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  @cap a    s    d    f    g    h    j    k    l    ;     '   ret
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lalt lmet           spc            @rsym fn menu @cp
+  @cap a    s    @dsym    f    g    h    j    @ksym    l    ;     '   ret
+  lsft @znum    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lalt @bsmt           spc            @rsym fn menu @cp
 )
 
 (deflayer functions
@@ -53,14 +53,16 @@
 
 (deflayer symbols
   XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
-  XX    @exc    @and     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  \
-  XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    =
+  XX    @exc    @and     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
+  XX    @prc      @amp    @wa      @usd    @cin    @po   @pc   [  ]      @dd    @dq    =
   XX    @lr   kp*     @tt     @und    @cex    XX      -   @bo  @bc     `    +
   @lfun     XX    XX    spc    XX    XX    XX   XX
 )
 
+
+
 (defvar
-  tap-timeout 50
+  tap-timeout 10
   hold-timeout 100
   tt $tap-timeout
   ht $hold-timeout
@@ -129,10 +131,6 @@
 
   sym (layer-while-held symbols)
 
-  ;; symbols layer
-  lsym (tap-hold $tt $ht spc @sym)
-  rsym (tap-hold $tt $ht ret @sym)
-
   ;; Activate the arrows like Vim
   nav  (layer-while-held navigation)
 
@@ -146,5 +144,15 @@
 
   fun (layer-while-held functions)
   lfun (tap-hold $tt $ht fn @fun)
+
+  bsmt (tap-hold $tt $ht bspc lmet)
+
+  ;; symbols layer
+  lsym (tap-hold $tt $ht spc @sym)
+  rsym (tap-hold $tt $ht ret @sym)
+  
+  dsym (tap-hold-except-keys 100 100 d @sym ( e r a s o i u d))
+  ksym (tap-hold-except-keys 50 200 k @sym (y u i o p h j k l ; ' n m , . / k))
+  znum (tap-hold-except-keys 50 200 z @lnum (x c v b n m  z))
 )
 
