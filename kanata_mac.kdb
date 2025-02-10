@@ -40,7 +40,7 @@
 
 (deflayer spanishup
   XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  XX  XX 
-  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX
+  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    bspc
   XX    XX    XX    @ues  XX    XX    XX    @uus  @uis  @uos  XX    XX    XX    ret
   XX  @uas  XX    XX    XX    XX    lft   down    up   rght    XX    XX    XX
   XX  XX   XX    XX    XX    XX    XX    @uns  XX    XX    XX    XX    XX
@@ -49,7 +49,7 @@
 
 (deflayer numeric
   XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  XX  XX 
-  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX
+  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    bspc
   XX    XX    XX    XX  XX    XX     -    7  8  9  /   @prc    XX    ret
   XX    XX    XX    XX    XX    XX    kp*   4    5   6    =    XX    XX
   XX    XX     XX    XX    XX    XX    XX    +  1    2    3  0    XX 

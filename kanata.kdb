@@ -13,9 +13,9 @@
 (deflayer base
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  @cap a    s    @dsym    f    g    h    j    @ksym    l    ;     '   ret
+  @cap a    s    d    f    g    h    j    k    l    ;     '   ret
   lsft @znum    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lalt @bsmt           spc            @rsym fn menu @cp
+  fn lalt @bsmt           spc            @rsym fn menu @cp
 )
 
 (deflayer functions
@@ -36,7 +36,7 @@
 )
 
 (deflayer spanishup
-  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX
+  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    bspc
   XX    XX    XX    @ues  XX    XX    XX    @uus  @uis  @uos  XX    XX    XX    XX
   XX  @uas  XX    XX    XX    XX    lft   down    up   rght    XX    XX    ret
   XX     XX    XX    XX    XX    XX    @uns  XX    XX    XX    XX    XX
@@ -44,7 +44,7 @@
 )
 
 (deflayer numeric
-  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX
+  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    bspc
   XX    XX    XX    XX  XX    XX     -    7  8  9  /   @prc    XX    XX
   XX    XX    XX    XX    XX    XX    kp*   4    5   6    =    XX    ret
   XX     XX    XX    XX    XX    XX    +  1    2    3  0    XX
@@ -54,8 +54,8 @@
 (deflayer symbols
   XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
   XX    @exc    @and     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
-  XX    @prc      @amp    @wa      @usd    @cin    @po   @pc   [  ]      @dd    @dq    =
-  XX    @lr   kp*     @tt     @und    @cex    XX      -   @bo  @bc     `    +
+  XX    @prc      @amp    @wa      @usd    @cin  =  @po   @pc    -     @dd    @dq    bspc
+  XX    @lr   kp*     @tt     @und    @cex    [      ]   @bo  @bc     `    +
   @lfun     XX    XX    spc    XX    XX    XX   XX
 )
 
@@ -148,11 +148,11 @@
   bsmt (tap-hold $tt $ht bspc lmet)
 
   ;; symbols layer
-  lsym (tap-hold $tt $ht spc @sym)
   rsym (tap-hold $tt $ht ret @sym)
   
-  dsym (tap-hold-except-keys 100 100 d @sym ( e r a s o i u d))
-  ksym (tap-hold-except-keys 50 200 k @sym (y u i o p h j k l ; ' n m , . / k))
-  znum (tap-hold-except-keys 50 200 z @lnum (x c v b n m  z))
+  ssym (tap-hold-except-keys 100 100 s @sym ( e r a s o i u d))
+  lsym (tap-hold-except-keys 50 200 l @sym (y u i o p h j k l n m , . / k))
+  znum (tap-hold-except-keys 50 200 z @lnum (x c v b z a s d f g q w e r t))
 )
+
 
