@@ -15,7 +15,7 @@
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @cap a    s    d    f    g    h    j    k    l    ;     '   ret
   lsft @znum    x    c    v    b    n    m    ,    .    /    rsft
-  fn lalt @bsmt           spc            @rsym fn menu @cp
+  fn lalt @bsmt           spc            ret fn menu @cp
 )
 
 (deflayer functions
@@ -53,7 +53,7 @@
 
 (deflayer symbols
   XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
-  XX    @exc    @and     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
+  XX    q    w     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
   XX    @prc      @amp    @wa      @usd    @cin  =  @po   @pc    -     @dd    @dq    bspc
   XX    @lr   kp*     @tt     @und    @cex    [      ]   @bo  @bc     `    +
   @lfun     XX    XX    spc    XX    XX    XX   XX

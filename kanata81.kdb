@@ -17,7 +17,7 @@
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \  end
   @cap a    s    d    f    g    h    j    k    l    ;    '    ret  pgup
   lsft z    x    c    v    b    n    m    ,    .    /    rsft  up pgdn
-  lctl lmet lalt           spc            @rsym ralt lft down rght
+  lctl lmet lalt           spc            ret ralt lft down rght
 )
 
 (deflayer navigation
