@@ -15,7 +15,7 @@
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @cap a    s    d    f    g    h    j    k    l    ;     '   ret
   lsft @znum    x    c    v    b    n    m    ,    .    /    rsft
-  fn lalt @bsmt           spc            ret fn menu @cp
+  fn lalt @bsmt           spc            @rsym fn menu @cp
 )
 
 (deflayer functions

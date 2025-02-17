@@ -17,7 +17,7 @@
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]   ret
   @cap a    s    d    f    g    h    j    k    l    ;     '   \
   lsft grv z    x    c    v    b    n    m    ,    .    /    @tilde
-  fn lctl lalt lmet           spc            ret @cp  left up down rght
+  fn lctl lalt lmet           spc            @rsym @cp  left up down rght
 )
 
 (deflayer functions 
