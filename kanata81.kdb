@@ -17,7 +17,7 @@
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \  end
   @cap a    s    d    f    g    h    j    k    l    ;    '    ret  pgup
   lsft z    x    c    v    b    n    m    ,    .    /    rsft  up pgdn
-  lctl lmet lalt           spc            @rsym ralt lft down rght
+  lalt lmet lctl           spc            @rsym ralt lft down rght
 )
 
 (deflayer navigation
@@ -122,7 +122,7 @@
   tilde (tap-hold $tt $ht @til rsft)
 
   ;; tap for esc, hold for left control in caps key
-  cap  (tap-hold $tt $ht esc lalt)
+  cap  (tap-hold $tt $ht esc lctl)
 
   sym (layer-while-held symbols)
 
