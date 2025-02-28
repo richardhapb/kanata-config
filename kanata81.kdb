@@ -25,7 +25,7 @@
   XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    lrld XX
   XX    @lnum    XX    @es  XX    XX    XX    @us  @is  @os  XX    pgup    pgdn    (lrld-num 2) XX
   @spu  @as  XX    XX    XX    XX    lft   down    up   rght    XX    XX    (lrld-num 1) XX
-  _     XX    XX    XX    XX    XX    @ns  XX    XX    XX    XX    XX  XX  XX
+  _     XX    XX    XX    XX    XX    @ns  XX    XX    XX    XX    (lrld-num 3)  XX  XX
   _     _   _    XX    _    _    _   _    _ 
 )
 
