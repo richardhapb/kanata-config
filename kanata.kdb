@@ -14,7 +14,7 @@
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   @lnav  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @cap a    s    d    f    g    h    j    k    l    ;     '   ret
-  lsft @znum    x    c    v    b    n    m    ,    .    /    rsft
+  lsft @znum     x   c    v    b    n    m    @csym    .    /    rsft
   @lfun lalt @bsmt           spc            @rsym fn menu @cp
 )
 
@@ -53,12 +53,19 @@
 
 (deflayer symbols
   XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
-  XX    q    w     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
+  XX    @exc    @at     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
   XX    @prc      @amp    @wa      @usd    @cin  =  @po   @pc    -     @dd    @dq    bspc
   XX    @lr   kp*     @tt     @und    @cex    [      ]   @bo  @bc     `    +
   XX     XX    XX    spc    XX    XX    XX   XX
 )
 
+(deflayer vim 
+  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
+  XX     _    _     _     _   _    _  _  _   _  _   _   _  _ 
+  XX    _      _    _      _    _  _  _   _    _     @dd    @dq    bspc
+  XX    @lr   kp*     @tt     @und    @cex    [      ]   @bo  @bc     `    +
+  XX     XX    XX    spc    XX    XX    XX   XX
+)
 
 
 (defvar
@@ -96,7 +103,7 @@
   bo S-[
   bc S-]
   tt S-grv
-  and S-2
+  at S-2
   hash S-3
   exc S-1
   prc S-5
@@ -117,7 +124,7 @@
   tq `
   dd S-;
   cin A-S-/
-  cex A-1
+  cex A-C-1
   lt S-,
   gt S-.
   til A-e
@@ -130,6 +137,8 @@
   cap  (tap-hold $tt $ht esc lctl)
 
   sym (layer-while-held symbols)
+
+  lvim (layer-while-held vim)
 
   ;; Activate the arrows like Vim
   nav  (layer-while-held navigation)
@@ -148,10 +157,10 @@
   bsmt (tap-hold $tt $ht bspc lmet)
 
   ;; symbols layer
-  rsym (tap-hold $tt $ht ret @sym)
+  rsym (tap-hold $tt $ht ret @lvim)
   
-  ssym (tap-hold-except-keys 100 100 s @sym ( e r a s o i u d))
-  lsym (tap-hold-except-keys 50 200 l @sym (y u i o p h j k l n m , . / k))
+  xsym (tap-hold-except-keys 100 100 x @sym ( e r a s o i u d x))
+  csym (tap-hold-except-keys 50 200 , @sym (y u i o p h j k l n m , . / k spc))
   znum (tap-hold-except-keys 50 200 z @lnum (x c v b z a s d f g q w e r t))
 )
 
