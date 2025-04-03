@@ -60,10 +60,10 @@
 )
 
 (deflayer vim 
-  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
+  XX    @cex    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
   XX     _    _     _     _   _    _  _  _   _  _   _   _  _ 
   XX    @prc      @amp    @wa      @usd    @cin  _  _   _    _     @dd    @dq    bspc
-  XX    @lr   kp*     @tt     @und    @cex    [      ]   @bo  @bc     `    +
+  XX    @lr   kp*     @tt     @und     XX   [      ]   @bo  @bc     `    +
   XX     XX    XX    spc    XX    XX    XX   XX
 )
 

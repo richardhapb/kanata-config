@@ -48,11 +48,11 @@
 )
 
 (deflayer symbols
-  XX  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX  XX  XX  XX XX XX
-  XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   XX  @chw
+  XX    XX   XX   XX   XX   XX   XX   XX   XX  XX   XX  XX  XX  XX XX XX
+  XX    @cex   XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   XX  @chw
   XX    @exc    @and     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  \  XX
   XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    =  XX
-  XX    @lr   kp*     @tt     @und    @cex    XX      -   @bo  @bc     `    +  XX  XX
+  XX    @lr   kp*     @tt     @und    XX    XX      -   @bo  @bc     `    +  XX  XX
   XX     XX    XX    spc    XX    XX    XX   XX   XX
 )
 
@@ -111,8 +111,8 @@
   sq '
   tq `
   dd S-;
-  cin A-S-/
-  cex A-1
+  cin M-S-/
+  cex M-S-1
   lt S-,
   gt S-.
   til A-e
