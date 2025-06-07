@@ -58,8 +58,8 @@
 
 (deflayer symbols
   XX  XX   XX   XX   XX   XX   XX   XX   XX   XX   XX  XX  XX 
-  XX    @cex    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
-  XX    @exc    @and     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  =
+  @cex   @exc    @at    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
+  XX    @exc    @at     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  =
   XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    \
   XX   XX   @lr   kp*     @tt     @und    XX    XX      -   @bo  @bc     `    +
   @lfun   XX     XX    XX    spc    XX    XX    XX   XX  XX  XX
@@ -100,7 +100,7 @@
   bo S-[
   bc S-]
   tt S-grv
-  and S-2
+  at S-2
   hash S-3
   exc S-1
   prc S-5
@@ -137,7 +137,7 @@
 
   ;; symbols layer
   lsym (tap-hold $tt $ht spc @sym)
-  rsym (tap-hold $tt $ht ret @sym)
+  rsym (tap-hold-except-keys $tt $ht ret @sym (q w))
 
   ;; Activate the arrows like Vim
   nav  (layer-while-held navigation)
