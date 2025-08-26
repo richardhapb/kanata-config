@@ -50,7 +50,7 @@
 (deflayer symbols
   XX  XX   XX   XX   XX   XX   XX   XX   XX  XX   XX  XX  XX   XX   XX
   @cex    @exc    @at    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
-  XX    @exc    @at    @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  =
+  XX    _    _    @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  =
   XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    \
   XX     XX  @lr   kp*     @tt     @und    @cex    XX      -   @bo  @bc     `    +
   _   _   _    spc    _    _    _   _    _  _  _  _

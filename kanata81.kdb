@@ -49,8 +49,8 @@
 
 (deflayer symbols
   XX    XX   XX   XX   XX   XX   XX   XX   XX  XX   XX  XX  XX  XX XX XX
-  XX    @cex   XX    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   XX  @chw
-  XX    @exc    @and     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  \  XX
+  @cex    @exc    @at    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   XX  @chw
+  XX    _    _     @hash     @int   XX    XX    XX  @po  @pc   @lt   @gt    /  \  XX
   XX    @prc      @amp    @wa      @usd    @cin    XX   XX   [  ]      @dd    @dq    =  XX
   XX    @lr   kp*     @tt     @und    XX    XX      -   @bo  @bc     `    +  XX  XX
   XX     XX    XX    spc    XX    XX    XX   XX   XX
@@ -91,7 +91,7 @@
   bo S-[
   bc S-]
   tt S-grv
-  and S-2
+  at S-2
   hash S-3
   exc S-1
   prc S-5
