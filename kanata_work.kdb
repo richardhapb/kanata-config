@@ -128,7 +128,7 @@
 
   ;; symbols layer
   lsym (tap-hold $tt $ht spc @sym)
-  rsym (tap-hold-except-keys $tt $ht ret @sym (q w))
+  rsym (tap-hold $tt $ht ret @sym)
 
   ;; Activate the arrows like Vim
   nav  (layer-while-held navigation)

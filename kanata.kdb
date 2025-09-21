@@ -53,7 +53,7 @@
 
 (deflayer symbols
   @cex    @exc    @at    XX    XX    XX    XX    XX    XX    XX    XX    @und    +   @chw
-  XX    @exc    @at     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
+  XX    _    _     @hash     @int   XX    XX  u  i   o  @lt   @gt    /  \
   XX    @prc      @amp    @wa      @usd    @cin  =  @po   @pc    -     @dd    @dq    bspc
   XX    @lr   kp*     @tt     @und    @cex    [      ]   @bo  @bc     `    +
   XX     XX    XX    spc    XX    XX    XX   XX
@@ -154,7 +154,7 @@
   bsmt (tap-hold $tt $ht bspc lmet)
 
   ;; symbols layer
-  rsym (tap-hold-except-keys $tt $ht ret @sym (q w))
+  rsym (tap-hold $tt $ht ret @sym)
   
   xsym (tap-hold-except-keys 100 100 x @sym ( e r a s o i u d x))
   csym (tap-hold-except-keys 50 200 , @sym (y u i o p h j k l n m , . / k spc))
